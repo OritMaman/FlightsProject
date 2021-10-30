@@ -1,26 +1,13 @@
-# Sh1
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## ff
-sdfd
+## Flights Project 
+Hi,
+I enclose here the project I worked on days and nights of investment and learning a new language,
+The PHP server side ran great and the Angular also ran really well on Monday, 
+but I got tangled up with the section of the connection between them despite all the trials,
+The much time and effort I put into it in so little time that was allotted to me, it did not work,
+even though I think I wrote the right code for it ...
+(I just know more about the connection between Angular and #C with which we are working on our final project.)
+For some of the functions I wrote an explanation in words what they are supposed to perform,
+but again from the angular all the functions run.
+So I would be really happy if you check the code itself more in depth in PHP and Angular without delaying the connection between them.
+I will be happy to make the connection if you want later ...
+Thank you very much for the opportunity to get to know a new and interesting language, and to do a project I really enjoyed !!! 😀😊
