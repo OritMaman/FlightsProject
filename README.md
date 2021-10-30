@@ -1,7 +1,7 @@
 ## Flights Project 
 Hi,
 I enclose here the project I worked on days and nights of investment and learning a new language,
-The PHP server side ran great and the Angular also ran really well on Monday, 
+The PHP server side ran great and the Angular also ran really well, 
 but I got tangled up with the section of the connection between them despite all the trials,
 The much time and effort I put into it in so little time that was allotted to me, it did not work,
 even though I think I wrote the right code for it ...
