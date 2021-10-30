@@ -1,0 +1,75 @@
+  
+<form class="backgroundcolor"> 
+    
+    <h1 class="edit" *ngIf="id!=0">Edit Flight</h1>
+    <h1 class="add" *ngIf="id==0">Add Flight</h1>
+        
+    
+        
+     <label for="destination">Destination: </label> 
+     <input #destination=ngModel id="destination" name="destination" type="String" required [(ngModel)]="flight.destination">        
+     <div [hidden]="destination.valid || destination.pristine">שדה חובה*</div>
+     <br/><br/>
+        
+     <label for="price">Price: </label>
+     <input #price=ngModel id="price" name="price" type="number" required [(ngModel)]="flight.price">
+     <div [hidden]="price.valid || price.pristine">שדה חובה*</div>
+     <br/><br/>
+      
+     <label for="date">Date: </label>
+     <input #date=ngModel id="date" name="date" type="String" required [(ngModel)]="flight.date">
+     <div [hidden]="date.valid || date.pristine">שדה חובה*</div>
+     <br/><br/> 
+
+     <label for="numOfCards">NumOfCards: </label>
+     <input #numOfCards=ngModel id="numOfCards" name="numOfCards" type="number" required [(ngModel)]="flight.numOfCards">
+     <div [hidden]="numOfCards.valid || numOfCards.pristine">שדה חובה*</div>
+     <br/> <br/>
+        
+         <button class="buttons" (click)="save()">Save</button>
+         <button class="buttons" (click)="cancel()">Cancel</button>
+       </form>
+  <!--    
+ <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+            <h1 *ngIf="id!=0">עריכת פרטי טיסה</h1>
+            <h1 *ngIf="id==0">הוספת טיסה</h1>
+  <div>
+    <label>
+      Destination:
+      <input formControlName="destination" placeholder="Your destination">
+    </label>
+    <div *ngIf="myForm.get('destination').invalid && (myForm.get('destination').dirty || myForm.get('destination').touched)">
+      Please provide a destination.
+    </div>
+  </div>
+  <div>
+    <label>
+      Price:
+      <input formControlName="price" placeholder="Your price">
+    </label>
+    <div *ngIf="myForm.get('price').invalid && (myForm.get('price').dirty || myForm.get('price').touched)">
+      Please provide a valid price.
+    </div>
+  </div>
+  <div>
+    <label>
+      Date:
+      <input formControlName="date" placeholder="Your date">
+    </label>
+    <div *ngIf="myForm.get('date').invalid && (myForm.get('date').dirty || myForm.get('date').touched)">
+     Please provide a valid date.
+    </div>
+</div>
+<div>
+<label>
+     NumOfCards:
+      <input formControlName="numOfCards" placeholder="Your numOfCards">
+    </label>
+    <div *ngIf="myForm.get('numOfCards').invalid && (myForm.get('numOfCards').dirty || myForm.get('numOfCards').touched)">
+     Please provide a valid numOfCards.
+    </div>
+  </div>
+  <button type="submit" [disabled]="myForm.invalid" (click)="save()">save</button>
+   <button type="submit" [disabled]="myForm.invalid" (click)="cancel()">cancel</button>
+</form>
+     -->

@@ -1,0 +1,27 @@
+
+
+<!--<div>
+<img class="iconImage"/>
+<input type="image" class="iconImage" src="airline-logo.svg">
+</div>-->
+<h2 class="centerInput">EL-AL</h2>
+<h3 class="search">Search your flight:</h3>
+<input  ng-model='searchText' placeholder='Enter your destination' [(ngModel)]="word">
+<input class="buttons" type="button" value="search" (click)="search()">
+
+<table>
+    <thead>
+        <tr class="th"><td class="topic" *ngFor="let topic of topics">{{topic}}</td></tr>
+        <tr class="td" *ngFor="let Airplain of airplainService.airplainList">
+                
+            <td>{{Airplain.id}}</td><td>✈</td><td>{{Airplain.destination}}</td><td>{{Airplain.price}}</td><td>{{Airplain.date}}</td><td>{{Airplain.numOfCards}}</td>
+             <td><button class="buttons"(click)="delete(Airplain.id)">delete</button>  
+              <button class="buttons" routerLink="/addORedit/{{Airplain.id}}">edit</button></td>  
+        </tr>
+   </thead>
+</table>
+<div class="center">
+<button class="buttons" routerLink="/addORedit/0">Add a flight</button>
+<!--<button class="buttons" (click)="cancel()">Cancel</button>-->
+
+</div>
